@@ -1,5 +1,5 @@
 //A打开B A就是B中的window.opener
-export function sendMessage(action: string) {
+function sendMessage(action: string) {
   window.opener
     ? window.opener.postMessage(
         {
@@ -10,7 +10,7 @@ export function sendMessage(action: string) {
     : console.warn("未找到开启此页面的父级页面");
 }
 
-export function listenMessage(
+function listenMessage(
   action: string,
   callback: () => void
 ): () => void {

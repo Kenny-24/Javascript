@@ -1,4 +1,4 @@
-//深拷贝
+//深拷贝（简易版）
 function deepClone(target) {
   if (typeof target === "object" && target != null) {
     // 判断是数组还是对象
