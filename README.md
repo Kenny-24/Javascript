@@ -1,2 +1,2 @@
 # Javascript
-JavaScript Coding Techniques   /   手写JS
+JavaScript   /   手写JS
