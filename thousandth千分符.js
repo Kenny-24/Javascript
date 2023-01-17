@@ -1,4 +1,4 @@
-parseToMoney(1087654.321); // return '1,087,654.321'
+parseToMoney(1087654.321); // '1,087,654.321'
 
 function parseToMoney(num) {
   num = parseFloat(num.toFixed(3));
