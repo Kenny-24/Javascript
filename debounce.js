@@ -1,4 +1,4 @@
-//防抖
+// 防抖
 function debounce(fn, delay = 100) {
   timer = 0;
   return function () {
