@@ -1,4 +1,4 @@
-//apply
+// apply
 Function.prototype.myApply = function (context, args) {
   context = typeof context === "object" ? context : window;
   const key = Symbol();
