@@ -1,4 +1,4 @@
-//柯里化
+// 柯里化
 function currying(fn, ...bindArgs) {
   return (...args) => {
     let allArgs = [...args, ...bindArgs];
