@@ -1,4 +1,4 @@
-//深拷贝（简易版）
+// 深拷贝（简易版）
 function deepClone(target) {
   if (typeof target === "object" && target != null) {
     // 判断是数组还是对象
@@ -21,13 +21,13 @@ function deepClone(target) {
 }
 
 // JSON.parse(JSON.stringify());
-//忽略function，值为undefined；RegExp、Error对象，序列化的结果将只得到空对象
-//时间对象，会被转成字符串格式
-//obj里有NaN、Infinity和-Infinity，则序列化的结果会变成null
-//无法满足循环引用
+// 忽略function，值为undefined；RegExp、Error对象，序列化的结果将只得到空对象
+// 时间对象，会被转成字符串格式
+// obj里有NaN、Infinity和-Infinity，则序列化的结果会变成null
+// 无法满足循环引用
 
-//浅拷贝
+// 浅拷贝
 let obj = { a: 1, b: { c: 2 }, d: [1, 2, 3] };
 let newObj = Object.assign(obj);
 let newObj2 = { ...obj };
-//a b d 可以被拷贝，即新申请地址保存数据，c 是两份指针指向同一地址
+// a b d 可以被拷贝，即新申请地址保存数据，c 是两份指针指向同一地址
