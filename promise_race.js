@@ -1,4 +1,4 @@
-//Promise.race
+// Promise.race
 function race(arr) {
   return new Promise((resolve, reject) => {
     if (arr.length == 0) {
