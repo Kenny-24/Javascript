@@ -18,7 +18,7 @@ class handleBus {
       this.events[type] = fnList.filter((item) => {
         const { fn, isOnce } = item;
         fn(...args);
-        //过滤掉isOnce为true的
+        // 过滤掉isOnce为true的
         if (!isOnce) return true;
         return false;
       });
