@@ -1,4 +1,4 @@
-//call
+// call
 Function.prototype.myCall = function (context, ...args) {
   context = typeof context === "object" ? context : window;
   let key = Symbol();
