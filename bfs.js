@@ -1,3 +1,4 @@
+// 广度优先搜索
 const bfs = (head) => {
   if (!head) return [];
   const result = [];
