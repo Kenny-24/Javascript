@@ -1,4 +1,4 @@
-//Promise.all
+// Promise.all
 function all(arr) {
   return new Promise((resolve, reject) => {
     let count = 0;
@@ -10,7 +10,7 @@ function all(arr) {
     for (let i = 0; i < length; i++) {
       arr[i]
         .then((res) => {
-          //按顺序输出
+          // 按顺序输出
           results[i] = res;
           count++;
           if (count == length) {
