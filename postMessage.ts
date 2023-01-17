@@ -1,4 +1,4 @@
-//A打开B A就是B中的window.opener
+// A打开B A就是B中的window.opener
 function sendMessage(action: string) {
   window.opener
     ? window.opener.postMessage(
