@@ -1,4 +1,4 @@
-//reduce
+// reduce
 const newArr = function (arr) {
   return arr.reduce(
     (pre, cur, index, arr) =>
@@ -6,6 +6,6 @@ const newArr = function (arr) {
     []
   );
 };
-//flat
+// flat
 let arr = [1, [3, 1, 2], [2, [234, [21]]]];
 console.log(arr.flat(5));
