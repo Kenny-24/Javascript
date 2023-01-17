@@ -1,3 +1,5 @@
+// 深度优先搜索
+
 const dfs = (head) => {
   if (!head) return [];
   const result = [];
