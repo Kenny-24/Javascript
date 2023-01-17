@@ -2,7 +2,7 @@
 // 选择需要观察变动的节点
 const targetNode = document.getElementById("some-id");
 
-// 观察器的配置（需要观察什么变动）
+// 观察器配置（需要观察什么变动）
 const config = { attributes: true, childList: true, subtree: true };
 
 // 当观察到变动时执行的回调函数
