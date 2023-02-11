@@ -5,27 +5,27 @@
 // console.log(6, newArr([1, 2], [2, 3]));
 // 2. 编写函数convert(money) ，传入金额，将金额转换为千分位表示法。例如：12345.6 => 12,345.6
 
-function convert(money) {
-  if (money != NaN && money != 0) {
-    let [integer, decimal] = String(Math.abs(parseFloat(money))).split(".");
-    let arr = integer.split("").reverse();
-    for (i in arr) {
-      if (i % 3 == 0 && i != 0) {
-        arr[i] = arr[i] + ",";
-      }
-    }
-    let newStr = arr.reverse().join("") + (decimal ? "." + decimal : "");
-    if (money > 0) {
-      return newStr;
-    } else {
-      return "-" + newStr;
-    }
-  } else {
-    return money;
-  }
-}
-let a = -1231233;
-console.log(66, convert(a));
+// function convert(money) {
+//   if (money != NaN && money != 0) {
+//     let [integer, decimal] = String(Math.abs(parseFloat(money))).split(".");
+//     let arr = integer.split("").reverse();
+//     for (i in arr) {
+//       if (i % 3 == 0 && i != 0) {
+//         arr[i] = arr[i] + ",";
+//       }
+//     }
+//     let newStr = arr.reverse().join("") + (decimal ? "." + decimal : "");
+//     if (money > 0) {
+//       return newStr;
+//     } else {
+//       return "-" + newStr;
+//     }
+//   } else {
+//     return money;
+//   }
+// }
+// let a = -1231233;
+// console.log(66, convert(a));
 
 // //数组内三个一组 组合
 // function createArray(arr) {
@@ -42,3 +42,60 @@ console.log(66, convert(a));
 //   }
 //   return newArr;
 // }
+
+Promise.resolve()
+  .then(() => {
+    console.log(0);
+    return Promise.resolve().then(() => {
+      return 4;
+    });
+  })
+  .then((res) => {
+    console.log(res);
+  });
+Promise.resolve()
+  .then(() => {
+    console.log(1);
+  })
+  .then(() => {
+    console.log(2);
+  })
+  .then(() => {
+    console.log(3);
+  })
+  .then(() => {
+    console.log(5);
+  })
+  .then(() => {
+    console.log(6);
+  });
+// .then(() => {
+//   console.log(0);
+//   return Promise.resolve(4);
+// })
+// .then(() => {
+//   console.log(1);
+// })
+// .then(() => {
+//   Promise.resolve().then(() => {
+//     return 4;
+//   });
+// });
+// .then(() => {
+//   console.log(2);
+// })
+// .then(() => {
+//   return 4;
+// })
+// .then(() => {
+//   console.log(3);
+// })
+// .then((res=4) => {
+//   console.log(res);
+// })
+// .then(() => {
+//   console.log(5);
+// })
+// .then(() => {
+//   console.log(6);
+// });
