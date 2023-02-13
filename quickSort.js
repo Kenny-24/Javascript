@@ -1,3 +1,6 @@
+// 思路：递归分成两部分进行排序
+// 时间复杂度（ nlogn ）
+
 function quickSort(arr) {
   if (arr.length <= 1) return arr;
   const num = arr[0];
