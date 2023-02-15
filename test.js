@@ -43,32 +43,32 @@
 //   return newArr;
 // }
 
-Promise.resolve()
-  .then(() => {
-    console.log(0);
-    return Promise.resolve().then(() => {
-      return 4;
-    });
-  })
-  .then((res) => {
-    console.log(res);
-  });
-Promise.resolve()
-  .then(() => {
-    console.log(1);
-  })
-  .then(() => {
-    console.log(2);
-  })
-  .then(() => {
-    console.log(3);
-  })
-  .then(() => {
-    console.log(5);
-  })
-  .then(() => {
-    console.log(6);
-  });
+// Promise.resolve()
+//   .then(() => {
+//     console.log(0);
+//     return Promise.resolve().then(() => {
+//       return 4;
+//     });
+//   })
+//   .then((res) => {
+//     console.log(res);
+//   });
+// Promise.resolve()
+//   .then(() => {
+//     console.log(1);
+//   })
+//   .then(() => {
+//     console.log(2);
+//   })
+//   .then(() => {
+//     console.log(3);
+//   })
+//   .then(() => {
+//     console.log(5);
+//   })
+//   .then(() => {
+//     console.log(6);
+//   });
 // .then(() => {
 //   console.log(0);
 //   return Promise.resolve(4);
@@ -99,3 +99,14 @@ Promise.resolve()
 // .then(() => {
 //   console.log(6);
 // });
+
+const b = (i = 0, next1 = 0) => {
+  if (i < 100) {
+    i++;
+    next1 = i + next1;
+  } else {
+    return next1;
+  }
+  return b(i, next1);
+};
+console.log(99999, b());
